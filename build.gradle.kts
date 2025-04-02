@@ -1,5 +1,3 @@
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 plugins {
@@ -49,11 +47,11 @@ dependencies {
 
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
-
+/*
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-
+*/
 tasks.named("build") {
 	doLast{
 		val trigger = file("src/main/resources/trigger.txt")
